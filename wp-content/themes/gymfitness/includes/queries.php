@@ -7,7 +7,7 @@ function gymfitness_lista_clases($cantidad = -1)
         <?php
         $args = array(
             'post_type' => 'gymfitness_clases',
-            'post_per_page' => $cantidad
+            'posts_per_page' => $cantidad
         );
 
         $clases = new WP_Query($args);
